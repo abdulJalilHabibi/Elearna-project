@@ -13,7 +13,7 @@ export default function Offer({className}) {
     >
       <Container>
         <div className="max-w-[553px] pb-10">
-          <SectionHeading eyebrow={offer.eyebrow} title={offer.title} light />
+          <SectionHeading className="text-white" eyebrow={offer.eyebrow} title={offer.title} light />
           <p className="mb-8 text-white/70 lg:mb-10">{offer.text}</p>
           <Button href="#" variant="yellow">Get Course</Button>
         </div>

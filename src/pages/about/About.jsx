@@ -13,17 +13,17 @@ export default function About() {
   return (
     <div className="w-full overflow-hidden">
       <main className="w-full">
-        <AboutHero />
-        <OurStory />
-        <Philosophy />
-        <QuoteText />
-        <section className="px-[15px]">
-          <DiscoverShowcase className="rounded" />
+        <AboutHero className="p-10"/>
+        <OurStory className="p-10"/>
+        <Philosophy className="p-10"/>
+        <QuoteText className="p-10"/>
+        <section className="">
+          <DiscoverShowcase className="rounded " />
         </section>
-        <Clients variant="band" text={aboutClients.text} logos={aboutClients.logos} />
-        <Vision />
-        <InstructorCta />
-        <Blog className="bg-white" />
+        <Clients className="p-10" variant="band" text={aboutClients.text} logos={aboutClients.logos} />
+        <Vision className="p-10" />
+        <InstructorCta className="p-10"/>
+        <Blog className="bg-white p-10" />
       </main>
     </div>
   );

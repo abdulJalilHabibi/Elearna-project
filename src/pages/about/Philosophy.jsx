@@ -8,12 +8,12 @@ export default function Philosophy({ className = "" }) {
   return (
     <section className={className}>
       <Container>
-        <div className="flex flex-col items-center text-center">
+        <div className="flex flex-col ">
           <Reveal delay={50}>
             <Eyebrow>{philosophy.eyebrow}</Eyebrow>
           </Reveal>
           <Reveal delay={100}>
-            <h3 className="mt-3 text-[25px] tracking-[-1px] md:text-[30px] lg:text-[35px] lg:leading-[42px]">
+            <h3 className="mt-3  text-[25px] tracking-[-1px] md:text-[30px] text-heading lg:text-[35px] lg:leading-[42px]">
               {philosophy.title}
             </h3>
           </Reveal>

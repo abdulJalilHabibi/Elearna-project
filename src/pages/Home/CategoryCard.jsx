@@ -7,7 +7,7 @@ export default function CategoryCard({ icon, title, count, href = "#" }) {
       <div className="mb-4 flex h-[70px] w-[70px] items-center justify-center rounded-full bg-light-blue transition-transform duration-300 group-hover:scale-110">
         <img src={icon} alt="" />
       </div>
-      <h6 className="mb-1 text-[15px] transition-colors duration-300 text-heading font-bold group-hover:text-blue md:text-[18px]">{title}</h6>
+      <h6 className="mb-1 text-[15px] transition-colors duration-300 text-heading font-bold  md:text-[18px]">{title}</h6>
       <div className="text-[14px] text-paragraph">{count} Courses</div>
     </a>
   );

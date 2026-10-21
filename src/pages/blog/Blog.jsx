@@ -6,9 +6,9 @@ export default function Blog() {
   return (
     <div className="w-full overflow-hidden">
       <main className="w-full">
-        <BlogHero />
-        <BlogGrid />
-        <CtaBanner />
+        <BlogHero className="p-10"/>
+        <BlogGrid className="p-10" />
+        <CtaBanner className="p-10" />
       </main>
     </div>
   );

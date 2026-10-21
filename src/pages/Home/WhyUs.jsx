@@ -14,7 +14,7 @@ export default function WhyUs({className}) {
           eyebrow={whyUs.eyebrow}
           title={whyUs.title}
           align="center"
-          className="mx-auto m mb-12 text-heading font-semibold max-w-[600px]"
+          className="mx-auto  mb-12 text-heading font-semibold max-w-[600px]"
         />
 
         <div className="flex flex-col items-stretch gap-[50px] lg:flex-row lg:items-center lg:justify-between">

@@ -31,7 +31,7 @@ export default function BlogGrid({ className = "" }) {
                       {featuredPost.author}
                     </span>
                   </div>
-                  <h3 className="mb-4 text-[22px] font-semibold leading-tight tracking-[-0.5px] text-heading transition-colors duration-300 group-hover:text-blue md:text-[26px]">
+                  <h3 className="mb-4 text-[22px] font-semibold leading-tight tracking-[-0.5px] text-heading transition-colors duration-300 md:text-[26px]">
                     {featuredPost.title}
                   </h3>
                   <p className="text-[15px] leading-relaxed text-paragraph md:text-[16px]">
@@ -72,7 +72,7 @@ export default function BlogGrid({ className = "" }) {
                             {post.author}
                           </span>
                         </div>
-                        <h4 className="text-[16px] font-semibold leading-snug tracking-[-0.5px] text-heading transition-colors duration-300 group-hover:text-blue md:text-[18px]">
+                        <h4 className="text-[16px] font-semibold leading-snug tracking-[-0.5px] text-heading transition-colors duration-300  md:text-[18px]">
                           {post.title}
                         </h4>
                       </div>

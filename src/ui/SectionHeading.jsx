@@ -16,7 +16,7 @@ export default function SectionHeading({
     <Reveal delay={delay} className={`flex flex-col ${alignment} ${className}`}>
       {eyebrow && <Eyebrow light={light}>{eyebrow}</Eyebrow>}
       <h2
-        className={`mt-4 mb-5 max-w-[850px] text-[30px] font-semibold leading-[1.15] tracking-[-1.5px] text-heading md:text-[35px] lg:text-[48px] lg:leading-[52px]`}
+        className={`${className} mt-4 mb-5 max-w-[850px] text-[30px] font-semibold leading-[1.15] tracking-[-1.5px] text-heading md:text-[35px] lg:text-[48px] lg:leading-[52px]`}
       >
         {title}
       </h2>
