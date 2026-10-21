@@ -13,7 +13,7 @@ export default function ContactDetails({ className = "" }) {
           </Reveal>
           
           <Reveal delay={100}>
-            <h2 className="mb-5 max-w-[750px] text-[28px] font-semibold leading-[1.2] tracking-[-1px] text-white md:text-[35px] lg:text-[45px] lg:leading-[52px]">
+            <h2 className="mb-5 max-w-[750px] text-[28px] font-semibold leading-[1.2] tracking-[-1px] text-heading md:text-[35px] lg:text-[45px] lg:leading-[52px]">
               {contactDetails.title}
             </h2>
           </Reveal>
@@ -37,7 +37,7 @@ export default function ContactDetails({ className = "" }) {
                   className="mt-1 h-9 w-auto shrink-0 object-contain"
                 />
                 <div className="flex flex-col">
-                  <h4 className="mb-2 text-[17px] font-semibold text-white md:text-[18px]">
+                  <h4 className="mb-2 text-[17px] font-semibold text-heading md:text-[18px]">
                     {item.title}
                   </h4>
                   {item.lines?.map((line, i) => (

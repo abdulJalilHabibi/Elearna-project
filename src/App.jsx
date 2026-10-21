@@ -4,7 +4,7 @@ import Contact from "./pages/contact/Contact.jsx";
 import Home from "./pages/Home/Home.jsx";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
-import About from "./pages/about/About";
+import About from "./pages/about/About.jsx";
 
 function App() {
   return (

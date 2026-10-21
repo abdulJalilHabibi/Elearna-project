@@ -6,7 +6,7 @@ import { ctaBanner } from "./contactData";
 export default function CtaBanner({ className = "" }) {
   return (
     <section
-      className={`bg-cover bg-center bg-no-repeat py-20 md:py-24 lg:py-28 px-4 md:px-8 lg:px-10 ${className}`}
+      className={`bg-cover bg-center bg-no-repeat py-20 md:py-24 lg:py-28 ${className}`}
       style={{
         backgroundImage: `linear-gradient(rgba(10, 23, 26, 0.55), rgba(10, 23, 26, 0.55)), url(${ctaBanner.background})`,
       }}
@@ -24,7 +24,7 @@ export default function CtaBanner({ className = "" }) {
               <Button
                 href={ctaBanner.secondaryCta.href}
                 variant="outline"
-                className="border-white/40 hover:bg-white hover:text-heading"
+                className="border-white/40 text-white hover:bg-white hover:text-heading"
               >
                 {ctaBanner.secondaryCta.label}
               </Button>

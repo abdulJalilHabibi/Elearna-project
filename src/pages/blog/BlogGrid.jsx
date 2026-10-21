@@ -4,7 +4,7 @@ import { featuredPost, blogPostsGrid } from "./blogData";
 
 export default function BlogGrid({ className = "" }) {
   return (
-    <section className={`py-[60px] md:py-[90px] lg:py-[120px] px-4 md:px-8 lg:px-10 ${className}`}>
+    <section className={`py-[60px] md:py-[90px] lg:py-[120px] ${className}`}>
       <Container>
         <div className="flex flex-col items-start gap-[30px] lg:flex-row">
           {/* Left: Sticky Featured Post */}
@@ -26,12 +26,12 @@ export default function BlogGrid({ className = "" }) {
                     <span className="text-[13px] font-medium text-paragraph">
                       {featuredPost.date}
                     </span>
-                    <span className="h-1.5 w-1.5 rounded-full bg-white" />
-                    <span className="text-[13px] font-medium uppercase text-white">
+                    <span className="h-1.5 w-1.5 rounded-full bg-heading" />
+                    <span className="text-[13px] font-medium uppercase text-heading">
                       {featuredPost.author}
                     </span>
                   </div>
-                  <h3 className="mb-4 text-[22px] font-semibold leading-tight tracking-[-0.5px] text-white transition-colors duration-300 group-hover:text-blue md:text-[26px]">
+                  <h3 className="mb-4 text-[22px] font-semibold leading-tight tracking-[-0.5px] text-heading transition-colors duration-300 group-hover:text-blue md:text-[26px]">
                     {featuredPost.title}
                   </h3>
                   <p className="text-[15px] leading-relaxed text-paragraph md:text-[16px]">
@@ -67,12 +67,12 @@ export default function BlogGrid({ className = "" }) {
                           <span className="text-[13px] font-medium text-paragraph">
                             {post.date}
                           </span>
-                          <span className="h-1 w-1 rounded-full bg-white" />
-                          <span className="text-[13px] font-medium uppercase text-white">
+                          <span className="h-1 w-1 rounded-full bg-heading" />
+                          <span className="text-[13px] font-medium uppercase text-heading">
                             {post.author}
                           </span>
                         </div>
-                        <h4 className="text-[16px] font-semibold leading-snug tracking-[-0.5px] text-white transition-colors duration-300 group-hover:text-blue md:text-[18px]">
+                        <h4 className="text-[16px] font-semibold leading-snug tracking-[-0.5px] text-heading transition-colors duration-300 group-hover:text-blue md:text-[18px]">
                           {post.title}
                         </h4>
                       </div>

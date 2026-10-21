@@ -10,7 +10,7 @@ export default function QuoteText({ className = "" }) {
           <Eyebrow>{quote.eyebrow}</Eyebrow>
         </Reveal>
         <Reveal delay={120}>
-          <h4 className="mt-4 text-[20px] leading-snug tracking-[-0.5px] text-white md:text-[24px]">{quote.text}</h4>
+          <h4 className="mt-4 text-[20px] leading-snug tracking-[-0.5px] text-heading md:text-[24px]">{quote.text}</h4>
         </Reveal>
       </div>
     </section>

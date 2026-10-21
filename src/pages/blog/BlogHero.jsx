@@ -6,7 +6,7 @@ import { blogHero } from "./blogData";
 export default function BlogHero({ className = "" }) {
   return (
     <section
-      className={`bg-cover bg-center bg-no-repeat pt-[180px] pb-[120px] md:pt-[220px] md:pb-[180px] lg:pt-[240px] lg:pb-[210px] px-4 md:px-8 lg:px-10 ${className}`}
+      className={`bg-cover bg-center bg-no-repeat pt-[180px] pb-[120px] md:pt-[220px] md:pb-[180px] lg:pt-[240px] lg:pb-[210px] ${className}`}
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${blogHero.background})`,
       }}

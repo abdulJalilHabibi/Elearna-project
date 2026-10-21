@@ -29,7 +29,7 @@ export default function ContactForm({ className = "" }) {
         <div className="flex justify-end">
           <Reveal
             delay={100}
-            className="w-full max-w-[550px] rounded bg-white p-8 shadow-[0_40px_60px_rgba(53,57,58,0.1)] md:p-10 lg:p-12"
+            className="w-full max-w-[550px] rounded bg-white p-6 shadow-[0_40px_60px_rgba(53,57,58,0.1)] sm:p-8 md:p-10 lg:p-12"
           >
             {submitted ? (
               <div className="rounded bg-[#eff6f8] p-6 text-center text-heading">
@@ -38,7 +38,7 @@ export default function ContactForm({ className = "" }) {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col">
-                <h3 className="mb-2 text-[24px] font-semibold tracking-[-0.5px] text-white md:text-[28px]">
+                <h3 className="mb-2 text-[24px] font-semibold tracking-[-0.5px] text-heading md:text-[28px]">
                   {contactForm.title}
                 </h3>
                 <p className="mb-6 text-[15px] text-paragraph">

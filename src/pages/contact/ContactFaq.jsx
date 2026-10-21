@@ -24,7 +24,7 @@ export default function ContactFaq({ className = "" }) {
             />
             <div className="flex flex-col text-center md:text-left">
               <Eyebrow className="mb-2">{contactFaq.eyebrow}</Eyebrow>
-              <h2 className="text-[28px] font-semibold tracking-[-1px] text-white md:text-[35px] lg:text-[40px] lg:leading-[46px]">
+              <h2 className="text-[28px] font-semibold tracking-[-1px] text-heading md:text-[35px] lg:text-[40px] lg:leading-[46px]">
                 {contactFaq.title}
               </h2>
             </div>
@@ -45,13 +45,13 @@ export default function ContactFaq({ className = "" }) {
                     onClick={() => toggle(index)}
                     className="flex w-full items-center justify-between gap-4 p-5 text-left transition-colors duration-200 hover:bg-black/[0.02] md:px-7 md:py-5"
                   >
-                    <span className="text-[16px] font-semibold text-white md:text-[18px]">
+                    <span className="text-[16px] font-semibold text-heading md:text-[18px]">
                       {item.question}
                     </span>
                     <div className="relative flex h-5 w-5 shrink-0 items-center justify-center">
-                      <span className="h-[2px] w-3.5 rounded-full bg-white transition-transform duration-300" />
+                      <span className="h-[2px] w-3.5 rounded-full bg-heading transition-transform duration-300" />
                       <span
-                        className={`absolute h-[2px] w-3.5 rounded-full bg-white transition-transform duration-300 ${
+                        className={`absolute h-[2px] w-3.5 rounded-full bg-heading transition-transform duration-300 ${
                           isOpen ? "rotate-0 opacity-0" : "rotate-90 opacity-100"
                         }`}
                       />
