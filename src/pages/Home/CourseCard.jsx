@@ -46,11 +46,11 @@ export default function CourseCard({
         {/* Buttons slide up on hover (always visible on touch screens) */}
         <div className="grid w-full transition-all duration-500 lg:grid-rows-[0fr] lg:group-hover:grid-rows-[1fr]">
           <div className="overflow-hidden">
-            <div className="flex flex-col w-full  gap-2.5 pt-6">
+            <div className="flex w-full  gap-2.5 pt-6">
               <Button
                 href={href}
                 variant="yellow"
-                className="flex-1 bg-[#FFB606] !px-6"
+                className="flex-1  bg-[#FFB606] !px-6"
               >
                 Course details
               </Button>

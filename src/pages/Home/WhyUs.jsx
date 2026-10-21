@@ -4,17 +4,17 @@ import StatCounter from "./StatCounter";
 import HelpBox from "./HelpBox";
 import { whyUs } from "./content";
 
-export default function WhyUs() {
+export default function WhyUs({className}) {
   const { video, decorations } = whyUs;
 
   return (
-    <section className="pt-20 pb-[90px]">
+    <section className={`${className} pt-20 pb-[90px]`}>
       <Container>
         <SectionHeading
           eyebrow={whyUs.eyebrow}
           title={whyUs.title}
           align="center"
-          className="mx-auto mb-12 max-w-[600px]"
+          className="mx-auto m mb-12 text-heading font-semibold max-w-[600px]"
         />
 
         <div className="flex flex-col items-stretch gap-[50px] lg:flex-row lg:items-center lg:justify-between">

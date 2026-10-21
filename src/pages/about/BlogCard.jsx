@@ -12,8 +12,8 @@ export default function BlogCard({ image, category, title, date, href = "#" }) {
         />
       </div>
       <div className="flex flex-col gap-3 p-[30px]">
-        <span className="text-[13px] font-medium uppercase text-heading">{category}</span>
-        <h5 className="text-[17px] leading-snug transition-colors group-hover:text-blue md:text-[20px]">{title}</h5>
+        <span className="text-[13px] font-medium uppercase text-white">{category}</span>
+        <h5 className="text-[17px] leading-snug transition-colors text-white font-semibold group-hover:text-blue md:text-[20px]">{title}</h5>
         <div>{date}</div>
       </div>
     </a>

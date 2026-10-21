@@ -11,9 +11,9 @@ function LogoTrain() {
   );
 }
 
-export default function Clients() {
+export default function Clients({className}) {
   return (
-    <section className="relative z-10 -mt-20">
+    <section className={`${className} relative z-10 -mt-20`}>
       <Container>
         <div className="flex flex-col items-center gap-9 rounded bg-white px-6 py-[45px] text-center shadow-[0_10px_60px_rgba(71,107,115,0.15)] md:px-[55px]">
           <p className="text-heading">{clients.text}</p>

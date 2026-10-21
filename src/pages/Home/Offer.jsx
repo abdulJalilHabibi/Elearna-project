@@ -3,10 +3,10 @@ import SectionHeading from "@/ui/SectionHeading";
 import Button from "@/ui/Button";
 import { offer } from "./content";
 
-export default function Offer() {
+export default function Offer({className}) {
   return (
     <section
-      className="bg-cover bg-center py-[120px] lg:py-[160px]"
+      className={` ${className} bg-cover bg-center py-[120px] lg:py-[160px]`}
       style={{
         backgroundImage: `linear-gradient(90deg, rgba(0,0,0,0.5), transparent), url(${offer.background})`,
       }}

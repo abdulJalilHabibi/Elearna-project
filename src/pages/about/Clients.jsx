@@ -26,10 +26,10 @@ function Marquee({ logos, fade }) {
  * variant="card"  – floating white card overlapping the section above (Home)
  * variant="band"  – full-width light-blue strip (About)
  */
-export default function Clients({ variant = "card", text = clients.text, logos = clients.logos }) {
+export default function Clients({ variant = "card", text = clients.text, logos = clients.logos, className = "" }) {
   if (variant === "band") {
     return (
-      <section className="overflow-hidden bg-light-blue py-10 md:py-[65px]">
+      <section className={`overflow-hidden bg-light-blue py-10 md:py-[65px] ${className}`}>
         <Container className="flex flex-col items-center text-center">
           <p className="mb-6 text-heading">{text}</p>
           <Marquee logos={logos} fade="from-light-blue" />
@@ -39,7 +39,7 @@ export default function Clients({ variant = "card", text = clients.text, logos =
   }
 
   return (
-    <section className="relative z-10 -mt-20">
+    <section className={`relative z-10 -mt-20 ${className}`}>
       <Container>
         <div className="flex flex-col items-center gap-9 rounded bg-white px-6 py-[45px] text-center shadow-[0_10px_60px_rgba(71,107,115,0.15)] md:px-[55px]">
           <p className="text-heading">{text}</p>

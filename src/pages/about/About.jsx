@@ -11,18 +11,20 @@ import { aboutClients } from "./about";
 
 export default function About() {
   return (
-    <>
-      <AboutHero />
-      <OurStory />
-      <Philosophy />
-      <QuoteText />
-      <section className="px-[15px]">
-        <DiscoverShowcase className="rounded" />
-      </section>
-      <Clients variant="band" text={aboutClients.text} logos={aboutClients.logos} />
-      <Vision />
-      <InstructorCta />
-      <Blog className="bg-white" />
-    </>
+    <div className="w-full overflow-hidden">
+      <main className="w-full">
+        <AboutHero />
+        <OurStory />
+        <Philosophy />
+        <QuoteText />
+        <section className="px-[15px]">
+          <DiscoverShowcase className="rounded" />
+        </section>
+        <Clients variant="band" text={aboutClients.text} logos={aboutClients.logos} />
+        <Vision />
+        <InstructorCta />
+        <Blog className="bg-white" />
+      </main>
+    </div>
   );
 }

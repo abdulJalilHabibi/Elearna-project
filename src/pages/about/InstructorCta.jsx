@@ -2,9 +2,9 @@ import Container from "@/ui/Container";
 import Button from "@/ui/Button";
 import { instructor } from "./about";
 
-export default function InstructorCta() {
+export default function InstructorCta({ className = "" }) {
   return (
-    <section className="overflow-hidden lg:pt-[87px]">
+    <section className={`overflow-hidden lg:pt-[87px] ${className}`}>
       <Container>
         <div
           className="flex items-center justify-center rounded bg-heading bg-cover bg-center px-5 pt-[30px] pb-10 md:px-[30px] md:pt-[50px] md:pb-[60px] lg:py-0"

@@ -9,14 +9,12 @@ export default function Button({
   variant = "dark",
   className = "",
   children,
-  bgColor,
   ...props
-  
 }) {
   return (
     <a
       href={href}
-      className={`inline-flex  min-h-[50px] items-center justify-center gap-2 rounded px-[45px] py-2.5 text-[14px] tracking-[-0.5px] capitalize transition-all  md:text-[17px]  ${className}`}
+      className={`inline-flex  max-h-[50px] items-center justify-center gap-2 rounded px-[45px] py-2.5 text-[13px] tracking-[-0.5px] capitalize transition-all duration-300 hover:scale-[0.96] active:scale-[0.93] md:text-[14px] ${variants[variant] || ""} ${className}`}
       {...props}
     >
       {children}

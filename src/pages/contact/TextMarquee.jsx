@@ -1,7 +1,7 @@
 import Container from "@/ui/Container";
 import { contactMarquee } from "./contactData";
 
-export default function TextMarquee() {
+export default function TextMarquee({ className = "" }) {
   const trainItem = (
     <div className="flex shrink-0 items-center">
       <span className="font-heading pr-[50px] text-[40px] font-bold uppercase leading-none tracking-wider text-[#e8e9ee] select-none sm:text-[55px] lg:text-[73px]">
@@ -11,7 +11,7 @@ export default function TextMarquee() {
   );
 
   return (
-    <section className="relative overflow-hidden pb-10">
+    <section className={`relative overflow-hidden pb-10 ${className}`}>
       <Container>
         <div className="relative flex w-full overflow-hidden">
           <div className="flex w-max shrink-0 animate-marquee">

@@ -12,11 +12,11 @@ function CheckIcon() {
   );
 }
 
-export default function Vision() {
+export default function Vision({ className = "" }) {
   const [jobStat, seasonStat] = vision.stats;
 
   return (
-    <section className="py-[50px] md:py-[90px]">
+    <section className={`py-[50px] md:py-[90px] ${className}`}>
       <Container>
         <div className="flex flex-col items-stretch gap-10 lg:flex-row lg:items-center lg:justify-between">
           {/* Image + stat collage */}

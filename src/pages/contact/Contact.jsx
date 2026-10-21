@@ -7,13 +7,15 @@ import CtaBanner from "./CtaBanner";
 
 export default function Contact() {
   return (
-    <main>
-      <ContactHero />
-      <ContactDetails />
-      <TextMarquee />
-      <ContactForm />
-      <ContactFaq />
-      <CtaBanner />
-    </main>
+    <div className="w-full overflow-hidden">
+      <main className="w-full">
+        <ContactHero />
+        <ContactDetails />
+        <TextMarquee />
+        <ContactForm />
+        <ContactFaq />
+        <CtaBanner />
+      </main>
+    </div>
   );
 }

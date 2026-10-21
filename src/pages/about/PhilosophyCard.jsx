@@ -4,7 +4,7 @@ export default function PhilosophyCard({ label, image, href = "#", arrowIcon }) 
     <div className="group relative flex items-center justify-center">
       {/* Revealed panel behind the image */}
       <div className="flex min-h-[368px] w-full items-center justify-end rounded bg-[#b6b7ba] py-[70px] pr-2.5 opacity-0 shadow-[0_40px_60px_rgba(27,39,41,0.3)] transition-opacity duration-500 group-hover:opacity-100">
-        <h5 className="text-[17px] text-heading [writing-mode:vertical-rl] md:text-[20px]">{label}</h5>
+        <h5 className="text-[17px] text-white [writing-mode:vertical-rl] md:text-[20px]">{label}</h5>
       </div>
 
       {/* Image swings open like a door */}

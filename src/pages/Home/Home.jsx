@@ -11,8 +11,8 @@ import Blog from "./Blog";
 
 export default function Home() {
   return (
-    <>
-      <main>
+    <div className="w-full overflow-hidden">
+      <main className="w-full">
         <Hero />
         <Features />
         <Categories />
@@ -24,6 +24,6 @@ export default function Home() {
         <Testimonials />
         <Blog />
       </main>
-    </>
+    </div>
   );
 }

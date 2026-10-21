@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { testimonials } from "./content";
 
-export default function Testimonials() {
+export default function Testimonials({className}) {
   const { items, quoteIcon, arrowIcon } = testimonials;
   const [index, setIndex] = useState(0);
 
@@ -15,7 +15,7 @@ export default function Testimonials() {
   }, [index]);
 
   return (
-    <section className="py-[90px]">
+    <section className={`${className} py-[90px]`}>
       <div className="mx-auto max-w-[1038px] px-[15px]">
         <div className="flex flex-col items-center">
           <img src={quoteIcon} alt="" className="mb-8" />

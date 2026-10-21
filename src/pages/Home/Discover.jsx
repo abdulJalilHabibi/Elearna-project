@@ -3,14 +3,14 @@ import Eyebrow from "@/ui/Eyebrow";
 import DiscoverCard from "./DiscoverCard";
 import { discover } from "./content";
 
-export default function Discover() {
+export default function Discover({className}) {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="bg-[#F1F4F4]  pt-20" >
+    <section className={`${className} bg-[#F1F4F4]  pt-20`} >
       <div className="mx-auto mb-9 flex max-w-[928px]  flex-col items-center px-[15px] text-center">
         <Eyebrow>{discover.eyebrow}</Eyebrow>
-        <h3 className="mt-4 text-[25px] leading-[1.2] tracking-[-1px] md:text-[30px] lg:text-[35px] lg:leading-[42px]">
+        <h3 className="mt-4 text-[25px] leading-[1.2] text-[#0F252A] font-semibold tracking-[-1px] md:text-[30px] lg:text-[35px] lg:leading-[42px]">
           {discover.title}
         </h3>
       </div>
