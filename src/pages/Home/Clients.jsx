@@ -11,18 +11,18 @@ function LogoTrain() {
   );
 }
 
-export default function Clients({className}) {
+export default function Clients({ className = "" }) {
   return (
-    <section className={`${className} relative z-10 -mt-20`}>
+    <section className={`relative z-10 -mt-12 sm:-mt-20 ${className}`}>
       <Container>
-        <div className="flex flex-col items-center gap-9 rounded bg-white px-6 py-[45px] text-center shadow-[0_10px_60px_rgba(71,107,115,0.15)] md:px-[55px]">
-          <p className="text-heading">{clients.text}</p>
+        <div className="flex flex-col items-center gap-6 rounded bg-white px-4 py-8 text-center shadow-[0_10px_60px_rgba(71,107,115,0.15)] sm:gap-9 sm:px-6 sm:py-[45px] md:px-[55px]">
+          <p className="text-[15px] font-medium text-heading sm:text-[16px]">{clients.text}</p>
           <div className="relative flex w-full overflow-hidden">
             <LogoTrain />
             <LogoTrain />
             {/* Fade edges */}
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-white to-transparent sm:w-24" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-white to-transparent sm:w-24" />
           </div>
         </div>
       </Container>

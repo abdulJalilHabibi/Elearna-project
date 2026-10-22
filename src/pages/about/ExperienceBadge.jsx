@@ -1,11 +1,13 @@
-// Vertical "25 / Year of experience" label shown beside the office photo
-export default function ExperienceBadge({ years, label }) {
+// Vertical "25 / Year of experience" label with 4-sided padding
+export default function ExperienceBadge({ years, label, className = "" }) {
   return (
-    <div className="mt-1 hidden shrink-0 items-center lg:flex">
-      <span className="text-[12px] font-bold uppercase leading-[22px] text-heading [writing-mode:vertical-lr]">
+    <div
+      className={`flex shrink-0 items-center justify-center p-4 sm:p-6 lg:pb-40 ${className}`}
+    >
+      <span className="text-[10px] font-bold uppercase leading-[22px] text-heading [writing-mode:vertical-lr] ">
         {label}
       </span>
-      <span className="font-heading text-[70px] font-medium leading-[80px] text-heading [writing-mode:vertical-lr] lg:text-[100px] lg:leading-[104px]">
+      <span className="font-heading text-[70px] font-medium leading-[80px] text-heading [writing-mode:vertical-lr] lg:text-[90px] lg:leading-[80px] pb-4">
         {years}
       </span>
     </div>

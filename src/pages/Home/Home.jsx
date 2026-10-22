@@ -10,19 +10,20 @@ import Testimonials from "./Testimonials";
 import Blog from "./Blog";
 
 export default function Home() {
+  const p = "p-4 sm:p-6 md:p-8 lg:p-10";
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full overflow-x-clip">
       <main className="w-full">
-        <Hero className="p-10"/>
-        <Features className="p-10" />
-        <Categories className="p-10" />
-        <Discover className="p-10" />
-        <Courses className="p-10"/>
-        <WhyUs className="p-10"/>
-        <Offer className="p-10" />
-        <Clients className="p-10" />
-        <Testimonials className="p-10"/>
-        <Blog className="p-10" />
+        <Hero className={p} />
+        <Features className={p} />
+        <Categories className={p} />
+        <Discover className={p} />
+        <Courses className={p} />
+        <WhyUs className={p} />
+        <Offer className={p} />
+        <Clients className={p} />
+        <Testimonials className={p} />
+        <Blog className={p} />
       </main>
     </div>
   );

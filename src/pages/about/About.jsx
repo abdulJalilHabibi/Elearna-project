@@ -10,20 +10,21 @@ import Blog from "./Blog";
 import { aboutClients } from "./about";
 
 export default function About() {
+  const p = "p-4 sm:p-6 md:p-8 lg:p-10";
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full">
       <main className="w-full">
-        <AboutHero className="p-10"/>
-        <OurStory className="p-10"/>
-        <Philosophy className="p-10"/>
-        <QuoteText className="p-10"/>
-        <section className="">
-          <DiscoverShowcase className="rounded " />
+        <AboutHero className={p} />
+        <OurStory className={p} />
+        <Philosophy className={p} />
+        <QuoteText className={p} />
+        <section className={`px-4 sm:px-[15px] ${p}`}>
+          <DiscoverShowcase className="rounded" />
         </section>
-        <Clients className="p-10" variant="band" text={aboutClients.text} logos={aboutClients.logos} />
-        <Vision className="p-10" />
-        <InstructorCta className="p-10"/>
-        <Blog className="bg-white p-10" />
+        <Clients className={p} variant="band" text={aboutClients.text} logos={aboutClients.logos} />
+        <Vision className={p} />
+        <InstructorCta className={p} />
+        <Blog className={`bg-white ${p}`} />
       </main>
     </div>
   );

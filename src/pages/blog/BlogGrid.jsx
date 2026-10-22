@@ -8,7 +8,7 @@ export default function BlogGrid({ className = "" }) {
       <Container>
         <div className="flex flex-col items-start gap-[30px] lg:flex-row">
           {/* Left: Sticky Featured Post */}
-          <div className="w-full lg:sticky lg:top-[120px] lg:max-w-[630px] lg:flex-1">
+          <div className="w-full lg:self-start lg:sticky lg:top-[140px] lg:max-w-[630px] lg:flex-1">
             <Reveal delay={100}>
               <a
                 href={featuredPost.href}
@@ -18,10 +18,10 @@ export default function BlogGrid({ className = "" }) {
                   <img
                     src={featuredPost.image}
                     alt={featuredPost.title}
-                    className="w-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                    className="w-full h-auto object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                   />
                 </div>
-                <div className="p-6 md:p-10 lg:px-12 lg:pt-10 lg:pb-12">
+                <div className="p-6 md:p-10 lg:p-[50px] lg:pb-[40px]">
                   <div className="mb-4 flex flex-wrap items-center gap-3">
                     <span className="text-[13px] font-medium text-paragraph">
                       {featuredPost.date}
@@ -31,7 +31,7 @@ export default function BlogGrid({ className = "" }) {
                       {featuredPost.author}
                     </span>
                   </div>
-                  <h3 className="mb-4 text-[22px] font-semibold leading-tight tracking-[-0.5px] text-heading transition-colors duration-300 md:text-[26px]">
+                  <h3 className="mb-4 text-[22px] font-semibold leading-tight tracking-[-0.5px] text-heading transition-colors duration-300 group-hover:text-blue md:text-[26px]">
                     {featuredPost.title}
                   </h3>
                   <p className="text-[15px] leading-relaxed text-paragraph md:text-[16px]">
@@ -59,7 +59,7 @@ export default function BlogGrid({ className = "" }) {
                         <img
                           src={post.image}
                           alt={post.title}
-                          className="aspect-[16/10] w-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                          className="w-full h-auto object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                         />
                       </div>
                       <div className="p-5 pb-7 md:p-6 md:pb-8">
@@ -72,7 +72,7 @@ export default function BlogGrid({ className = "" }) {
                             {post.author}
                           </span>
                         </div>
-                        <h4 className="text-[16px] font-semibold leading-snug tracking-[-0.5px] text-heading transition-colors duration-300  md:text-[18px]">
+                        <h4 className="text-[16px] font-semibold leading-snug tracking-[-0.5px] text-heading transition-colors duration-300 group-hover:text-blue md:text-[18px]">
                           {post.title}
                         </h4>
                       </div>
